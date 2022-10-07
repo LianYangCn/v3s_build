@@ -19,7 +19,7 @@ RUN apt-get install --yes --no-install-recommends wget unzip build-essential \
 RUN wget http://releases.linaro.org/components/toolchain/binaries/7.5-2019.12/arm-linux-gnueabi/gcc-linaro-7.5-2019.12-x86_64_arm-linux-gnueabi.tar.xz \
     && tar -vxJf gcc-linaro-7.5-2019.12-x86_64_arm-linux-gnueabi.tar.xz \ 
     && cp -r gcc-linaro-7.5-2019.12-x86_64_arm-linux-gnueabi /opt/ \
-    && echo "PATH=\"$PATH:/opt/gcc-linaro-7.5-2019.12-x86_64_arm-linux-gnueabi/bin\"" > /etc/bash.bashrc \
+    && echo "PATH=\"$PATH:/opt/gcc-linaro-7.5-2019.12-x86_64_arm-linux-gnueabi/bin\"" > /etc/bash.bashrc
 
 # Setting workdir and env
 WORKDIR /home/lichee
